@@ -1,0 +1,35 @@
+/* styles/sidebar.module.css */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.dropdownLink {
+    cursor: pointer;
+}
+
+.dropdown {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* styles/company-details.module.css */
+.container {
+    display: flex;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content section {
+    margin-bottom: 100px;
+}

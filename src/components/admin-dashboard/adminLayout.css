@@ -1,0 +1,12 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f7fafc; /* Light gray background for the entire page */
+}
+
+.main-content {
+    margin-left: 16rem; /* Same width as the sidebar */
+    padding: 1rem; /* Adjust padding as needed */
+    background-color: #ffffff; /* White background for content area */
+    flex: 1;
+}

@@ -1,0 +1,64 @@
+/* SearchBar.module.css */
+.searchbar-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Slightly off-white background for better contrast */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    position: relative; /* For positioning the result list */
+}
+
+.searchbar-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Adjusted margin */
+    outline: none;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+.searchbar-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Slightly larger focus shadow */
+}
+
+.searchbar-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Position the result list under the search bar */
+    width: 100%; /* Match width with search bar */
+    top: 100%; /* Align with the bottom of the search bar */
+    left: 0;
+    background-color: #fff; /* Ensure background is white for better readability */
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px; /* Rounded corners for bottom only */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match shadow with container */
+    max-height: 300px; /* Restrict height */
+    overflow-y: auto; /* Scrollbar if needed */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.searchbar-result-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease; /* Smooth hover transition */
+}
+
+.searchbar-result-item:hover {
+    background-color: #f1f1f1;
+    color: #007bff; /* Change text color on hover for better visual feedback */
+}
+
+.searchbar-result-item:last-child {
+    border-bottom: none;
+}

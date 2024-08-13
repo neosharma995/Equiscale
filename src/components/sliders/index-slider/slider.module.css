@@ -1,0 +1,71 @@
+.tickerTape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tickerContainer {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.tickerItem {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.stockSymbol {
+    font-weight: bold;
+}
+
+.stockName {
+    color: #666;
+}
+
+.stockPrice {
+    color: #333;
+}
+
+.up {
+    color: green;
+}
+
+.down {
+    color: red;
+}
+
+.viewAllItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.viewAll {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

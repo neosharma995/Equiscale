@@ -1,0 +1,46 @@
+/* components/TickerTape.module.css */
+
+/* Container for the ticker tape */
+.tickerTape {
+    overflow: hidden;
+    background-color: #07125d;
+    border: 1px solid #07125d;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Content wrapper for scrolling */
+.ticker {
+    display: inline-block;
+    animation: ticker 70s linear infinite; /* Smooth and slower movement */
+}
+
+/* Individual stock item */
+.ticker li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+/* Colors for up and down changes */
+.up {
+    color: #00ff00;
+}
+
+.down {
+    color: #ff0000;
+}
+
+/* Keyframes for the ticker animation */
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

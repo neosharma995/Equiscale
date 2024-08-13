@@ -1,0 +1,21 @@
+/* WatchlistComponent.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.search-bar {
+    margin-bottom: 1.5rem;
+}
+
+.watchlist {
+    margin-top: 1rem;
+}

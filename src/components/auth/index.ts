@@ -1,0 +1,6 @@
+export { LoginForm } from '@/components/auth/login-form'
+export { RegisterForm } from '@/components/auth/register-form'
+export { ResetForm } from '@/components/auth/reset-form'
+export { NewPasswordForm } from '@/components/auth/new-password-form'
+export { NewVerificationForm } from '@/components/auth/new-verification-form'
+export { Social } from '@/components/auth/social'

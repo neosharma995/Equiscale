@@ -1,0 +1,9 @@
+/* Ensure the main content is pushed to the right of the sidebar */
+.main-content {
+    margin-left: 130px; /* Same as the sidebar width */
+    padding: 20px;
+}
+
+.marginTop {
+    margin-top: 100px;
+}

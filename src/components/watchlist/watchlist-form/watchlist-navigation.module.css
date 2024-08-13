@@ -1,0 +1,30 @@
+.watchlist-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.tab {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #bbb;
+}
+
+.active {
+    background-color: #007bff;
+    color: #fff;
+}

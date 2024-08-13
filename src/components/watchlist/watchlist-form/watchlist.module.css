@@ -1,0 +1,119 @@
+/* Watchlist.module.css */
+.watchlist-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.watchlist-item:last-child {
+    border-bottom: none;
+}
+
+.watchlist-item-symbol {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for the symbol */
+    text-transform: uppercase;
+}
+
+.watchlist-item-price {
+    color: #333;
+    font-weight: bold;
+    margin-left: auto;
+    text-align: right;
+}
+
+.watchlist-item-percent-change {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.watchlist-item-percent-change.positive {
+    color: #27ae60; /* Green color for positive change */
+}
+
+.watchlist-item-percent-change.negative {
+    color: #e74c3c; /* Red color for negative change */
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.button.buy {
+    background-color: #007bff;
+}
+
+.button.buy:hover {
+    background-color: #0056b3;
+}
+
+.button.sell {
+    background-color: #dc3545;
+}
+
+.button.sell:hover {
+    background-color: #c82333;
+}
+
+.button.remove {
+    background-color: #6c757d;
+}
+
+.button.remove:hover {
+    background-color: #5a6268;
+}
+
+.watchlist-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.watchlist-tabs button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.watchlist-tabs button:hover {
+    background-color: #bbb;
+}
+
+.watchlist-tabs button.active {
+    background-color: #007bff;
+    color: #fff;
+}
